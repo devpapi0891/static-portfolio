@@ -1,0 +1,107 @@
+[
+	{
+		"name": "HTML",
+		"image": "html.png",
+		"category": "web development stack"
+	},
+	{
+		"name": "CSS",
+		"image": "css.png",
+		"category": "web development stack"
+	},
+	{
+		"name": "Javascript",
+		"image": "javascript.png",
+		"category": "web development stack"
+	},
+	{
+		"name": "JSON",
+		"image": "json.png",
+		"category": "web development stack"
+	},
+	{
+		"name": "jQuery",
+		"image": "jquery.png",
+		"category": "web development stack"
+	},
+	{
+		"name": "Bootstrap",
+		"image": "bootstrap.png",
+		"category": "web development stack"
+	},
+	{
+		"name": "Tailwind CSS",
+		"image": "tailwindcss.png",
+		"category": "web development stack"
+	},
+	{
+		"name": "PHP",
+		"image": "php.png",
+		"category": "web development stack"
+	},
+	{
+		"name": "MySQL",
+		"image": "mysql.png",
+		"category": "web development stack"
+	},
+	{
+		"name": "Apache HTTP Server",
+		"image": "apache.png",
+		"category": "web development stack"
+	},
+	{
+		"name": "NodeJS",
+		"image": "nodejs.png",
+		"category": "web development stack"
+	},
+	{
+		"name": "Sveltekit",
+		"image": "sveltekit.png",
+		"category": "web development stack"
+	},
+	{
+		"name": "Docker",
+		"image": "docker.png",
+		"category": "DevOps and Containerization"
+	},
+	{
+		"name": "Linux",
+		"image": "linux.png",
+		"category": "DevOps and Containerization"
+	},
+	{
+		"name": "Ubuntu",
+		"image": "ubuntu.png",
+		"category": "DevOps and Containerization"
+	},
+	{
+		"name": "Windows",
+		"image": "windows.png",
+		"category": "DevOps and Containerization"
+	},
+	{
+		"name": "Cloudflare",
+		"image": "cloudflare.png",
+		"category": "Internet Technology"
+	},
+	{
+		"name": "Arduino",
+		"image": "arduino.png",
+		"category": "Hardware and Electronics"
+	},
+	{
+		"name": "Typescript",
+		"image": "typscript.png",
+		"category": "Miscellaneous"
+	},
+	{
+		"name": "VS Code",
+		"image": "vscode.png",
+		"category": "Development Tool"
+	},
+	{
+		"name": "GitHub",
+		"image": "github.png",
+		"category": "Miscellaneous"
+	}
+]

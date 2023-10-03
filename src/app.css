@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--color_neutral-1: #ffffff;
+	--color_neutral-2: #e3e3e3;
+	--color_neutral-3: #bdbdbd;
+	--color_inverted-1: #333333;
+	--color_inverted-2: #2b2b2b;
+	--color_inverted-3: #212121;
+}
+
+body.darkMode {
+	--color_neutral-1: #333333;
+	--color_neutral-2: #2b2b2b;
+	--color_neutral-3: #212121;
+	--color_inverted-1: #ffffff;
+	--color_inverted-2: #e3e3e3;
+	--color_inverted-3: #bdbdbd;
+}
+
+body {
+	background-color: var(--color_neutral-2);
+	color: var(--color_inverted-2);
+	transition: all 0.2s;
+}
+
+body.dark {
+	background-color: var(--color_neutral-2);
+	color: var(--color_inverted-2);
+}
+
+main {
+	min-height: 150vh;
+}
