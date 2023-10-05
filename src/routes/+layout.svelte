@@ -1,6 +1,7 @@
 <script>
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
+	import Sidenav from '$lib/components/Sidenav.svelte';
 	import '../app.css';
 </script>
 
@@ -12,7 +13,7 @@
 </svelte:head>
 
 <Header />
-
+<Sidenav />
 <main>
 	<slot />
 </main>

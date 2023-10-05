@@ -5,5 +5,9 @@ export default defineConfig({
 	plugins: [sveltekit()],
 	test: {
 		include: ['src/**/*.{test,spec}.{js,ts}']
+	},
+	// My Modifications
+	server: {
+		port: 5007
 	}
 });

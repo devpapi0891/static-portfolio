@@ -2,7 +2,7 @@
 	import '../../../app.css';
 	import Icon from '@iconify/svelte';
 	import { onMount } from 'svelte';
-	import { techstack } from '../../data/data';
+	import { techstack } from '../../data/techstack';
 
 	// @ts-ignore
 	const showTechStackDetails = (item) => {
@@ -10,6 +10,7 @@
 	};
 
 	let techstackCardMargin = 'margin-right:-100vw;';
+	// let techstackCardMargin = 'margin-right:0;';
 	let techstackIndex = 0;
 
 	onMount(async () => {
@@ -42,7 +43,7 @@
 
 		<div
 			style={techstackCardMargin}
-			class="__tStackModal fixed right-[9%] bottom-[100px] border border-[--color_neutral-3] py-4 px-4 w-[100%] max-w-[360px] bg-[--color_neutral-2] rounded-lg"
+			class="__tStackModal fixed right-[9%] bottom-[100px] border border-[--color-neutral-1] py-4 px-4 w-[100%] max-w-[360px] bg-[--color-neutral-2] rounded-lg"
 		>
 			<button
 				data-close-modal
@@ -63,7 +64,7 @@
 				</div>
 			</div>
 
-			<p class="border-b-2 border-[--color_neutral-3] py-3" />
+			<p class="border-b-2 border-[--color-neutral-3] py-3" />
 
 			<p class="whitespace-pre-wrap py-5">{techstack[techstackIndex].shortDescription}</p>
 
@@ -71,7 +72,7 @@
 				<a
 					href={techstack[techstackIndex].referenceLink}
 					target="_blank"
-					class="flex gap-1 items-center py-3 px-5 bg-red-500 hover:bg-red-600 text-[--color_neutral-2]"
+					class="flex gap-1 items-center py-3 px-5 bg-red-500 hover:bg-red-600 text-[--color-neutral-2]"
 				>
 					<Icon icon="carbon:link" />
 					Check this out!
@@ -84,13 +85,15 @@
 <style>
 	.tech__card {
 		user-select: none;
-		box-shadow: -7px -7px 16px 0 var(--color_neutral-1), 7px 7px 10px -4px var(--color_neutral-3);
+		box-shadow: -7px -7px 16px 0 var(--color-neutral-1), 7px 7px 10px -4px var(--color-neutral-3);
 		cursor: pointer;
 		transition: 0.4s;
+		border: solid 1px var(--color-neutral-2);
+		border: solid 1px var(--color-neutral-1);
 	}
 	.tech__card:active {
-		box-shadow: -7px -7px 16px 0 var(--color_neutral-1) inset,
-			7px 7px 10px -4px var(--color_neutral-3) inset;
+		box-shadow: -7px -7px 16px 0 var(--color-neutral-1) inset,
+			7px 7px 10px -4px var(--color-neutral-3) inset;
 	}
 	.__tStackModal {
 		box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.15);
@@ -98,12 +101,12 @@
 	}
 
 	[data-techstack-icon] {
-		box-shadow: -7px -7px 16px 0 var(--color_neutral-1), 7px 7px 10px -4px var(--color_neutral-3);
-		border: solid 2px var(--color_neutral-2);
+		box-shadow: -7px -7px 16px 0 var(--color-neutral-1), 7px 7px 10px -4px var(--color-neutral-3);
+		/* border: solid 1px var(--color-neutral-1); */
 	}
 
 	[data-close-modal]:active {
-		box-shadow: -7px -7px 16px 0 var(--color_neutral-1) inset,
-			7px 7px 10px -4px var(--color_neutral-3) inset;
+		box-shadow: -7px -7px 16px 0 var(--color-neutral-1) inset,
+			7px 7px 10px -4px var(--color-neutral-3) inset;
 	}
 </style>
